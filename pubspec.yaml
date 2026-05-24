@@ -1,0 +1,25 @@
+name: x_logger
+description: >-
+  Configurable Flutter logging: named loggers, log levels, pretty/JSON/colored
+  output, filtering, and async export of log history to a shareable file.
+version: 0.1.0
+homepage: https://github.com/abdorizak/x_logger
+repository: https://github.com/abdorizak/x_logger
+issue_tracker: https://github.com/abdorizak/x_logger/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=1.17.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Used to resolve a safe, writable directory on iOS/Android/desktop.
+  # Falls back gracefully at runtime when no platform plugin is registered
+  # (e.g. unit tests, Flutter desktop without the plugin).
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
