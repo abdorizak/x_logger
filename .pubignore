@@ -1,0 +1,22 @@
+# NOTE: a root .pubignore overrides the root .gitignore for publishing, so the
+# standard build/tooling excludes must be re-declared here, plus our extras.
+
+# Build & tooling artifacts (match at any depth).
+.dart_tool/
+build/
+.flutter-plugins-dependencies
+pubspec.lock
+*.log
+*.iml
+.DS_Store
+.idea/
+
+# Example app platform scaffolding — pub.dev only needs example/lib + pubspec.
+example/android/
+example/ios/
+example/macos/
+example/linux/
+example/windows/
+
+# Docs and image assets (the README banner loads from an absolute GitHub URL).
+doc/
