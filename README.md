@@ -1,3 +1,5 @@
+![x_logger](https://raw.githubusercontent.com/abdorizak/x_logger/main/doc/banner.png)
+
 # x_logger
 
 [![pub package](https://img.shields.io/pub/v/x_logger.svg)](https://pub.dev/packages/x_logger)
