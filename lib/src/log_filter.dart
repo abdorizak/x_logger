@@ -71,8 +71,7 @@ class _AllFilter extends LogFilter {
   final List<LogFilter> filters;
 
   @override
-  bool shouldLog(LogEvent event) =>
-      filters.every((f) => f.shouldLog(event));
+  bool shouldLog(LogEvent event) => filters.every((f) => f.shouldLog(event));
 }
 
 class _AnyFilter extends LogFilter {

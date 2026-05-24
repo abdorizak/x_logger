@@ -45,9 +45,8 @@ class SimplePrinter extends LogPrinter {
     buffer.write(event.message);
 
     if (config.showFields && event.fields.isNotEmpty) {
-      final rendered = event.fields.entries
-          .map((e) => '${e.key}=${e.value}')
-          .join(', ');
+      final rendered =
+          event.fields.entries.map((e) => '${e.key}=${e.value}').join(', ');
       buffer.write(' {$rendered}');
     }
     if (event.error != null) {
@@ -112,9 +111,8 @@ class PrettyPrinter extends LogPrinter {
       lines.add(color.paint('$_vertical $line'));
     }
     if (config.showFields && event.fields.isNotEmpty) {
-      final rendered = event.fields.entries
-          .map((e) => '${e.key}=${e.value}')
-          .join(', ');
+      final rendered =
+          event.fields.entries.map((e) => '${e.key}=${e.value}').join(', ');
       lines.add(color.paint('$_vertical $rendered'));
     }
     if (event.error != null) {

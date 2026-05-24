@@ -92,7 +92,10 @@ void main() {
           sequence: 7,
           fields: {
             'query': 'mercy',
-            'filters': {'surah': [1, 2], 'exact': false},
+            'filters': {
+              'surah': [1, 2],
+              'exact': false
+            },
           },
         ),
       );

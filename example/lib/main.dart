@@ -217,7 +217,9 @@ class _LogDemoPageState extends State<LogDemoPage> {
             ),
           ),
           const SizedBox(height: 12),
-          Expanded(child: _Terminal(events: _events, json: _json, controller: _scroll)),
+          Expanded(
+              child:
+                  _Terminal(events: _events, json: _json, controller: _scroll)),
         ],
       ),
     );
@@ -268,7 +270,8 @@ class _Terminal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final printer = json ? _LogDemoPageState._jsonPrinter : _LogDemoPageState._textPrinter;
+    final printer =
+        json ? _LogDemoPageState._jsonPrinter : _LogDemoPageState._textPrinter;
     final rows = <(String, LogLevel)>[
       for (final event in events)
         for (final line in printer.render(event)) (line, event.level),
